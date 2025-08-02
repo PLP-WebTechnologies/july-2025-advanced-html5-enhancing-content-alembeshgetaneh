@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form - Alembesh Getaneh</title>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Alembesh Getaneh's Portfolio</h1>
+    <p>BSc in Computer Science | Project Manager at Chromepay | Photographer & Graphic Designer</p>
+    <hr>
+  </header>
+
+  <main>
+    <!-- Section 1: Media -->
+    <section>
+      <h2>About Me</h2>
+      <p>I am a technology enthusiast passionate about project management, photography, and web development.</p>
+      <img src="profile.jpg" alt="Alembesh's Profile Picture" width="200">
+      <audio controls>
+        <source src="intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video src="portfolio-sample.mp4" controls width="300">
+        Your browser does not support video.
+      </video>
+    </section>
+
+    <!-- Section 2: Lists -->
+    <section>
+      <h2>Skills and Tools</h2>
+      <ul>
+        <li>Project Management & Team Coordination</li>
+        <li>Web Development (HTML5, CSS3, JS)</li>
+        <li>Photography & Photoshop Editing</li>
+        <li>Graphic Design & Visual Communication</li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Table -->
+    <section>
+      <h2>Recent Projects</h2>
+      <table border="1">
+        <caption>Project Highlights</caption>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Role</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chromepay Pilot Setup</td>
+            <td>Project Manager</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Local SACCO Website</td>
+            <td>Web Developer</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Photography Portfolio</td>
+            <td>Photographer & Designer</td>
+            <td>2024</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 4: Form -->
+    <section>
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+2519XXXXXXXX" required pattern="^\+2519\d{8}$"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Service & Preferences</legend>
+          <label for="service">Service Interested In:</label>
+          <select id="service" name="service" required>
+            <option value="">--Select--</option>
+            <option value="project">Project Management</option>
+            <option value="web">Web Development</option>
+            <option value="photo">Photography</option>
+            <option value="design">Graphic Design</option>
+          </select><br><br>
+
+          <p>Preferred Communication:</p>
+          <input type="radio" id="emailComm" name="communication" value="email" required>
+          <label for="emailComm">Email</label>
+          <input type="radio" id="phoneComm" name="communication" value="phone">
+          <label for="phoneComm">Phone</label><br><br>
+
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" checked>
+            Subscribe to my updates
+          </label><br><br>
+
+          <label for="role">My Current Role:</label>
+          <input type="text" id="role" value="Project Manager at Chromepay" readonly><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="message">Your Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2025 Alembesh Getaneh | Designed for PLP Web Technologies Assignment</p>
+  </footer>
+</body>
+</html>
